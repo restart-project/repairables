@@ -1,39 +1,113 @@
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-<title>Just Repair</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Bootstrap -->
-<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-</head>
-<body>
 
-<div class="container">
+  <head>
+    <title>What's wrong with your stuff?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
+    <style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 700px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+    </style>
+  </head>
+
+
+  <body>
+
+    <div class="container">
       <div class="masthead">
-        <h3 class="muted">Repairables</h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Stuff to repair</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="muted"><img src="img/repairables-header-230x70px.png"/></h3>
       </div>
 
-    <button class="btn" id="loadDataButton">Get tweets</button>
-</div>
+      <hr>
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/twitter.js"></script>
-</body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Hi @janetgunter,</h1>
+      </div>
+      <p class="lead">Sorry your thing is broken! Please tell a little more about it:</p>
+
+    <div class="row">
+
+      <div class="span6">
+        <img src="img/broken-phone-pic-cropped.jpg"
+      width="400" height="400">
+      </div>
+
+        <div class="span4">
+          <form>
+            <label>Make / Model</label>
+            <input type="text" class="input-medium">
+      <span class="label"></span>
+      <label>What's wrong with it?</label>
+      <textarea></textarea>
+
+        <label>How urgent is it?</label>
+      <label class="radio" for="radio">
+        <input type="radio" value="true" id="radio" name="radio"> I'm desperate!</label>
+      <label class="radio" for="radio">
+        <input type="radio" value="true" id="radio" name="radio"> I need it in the next week</label>
+      <label class="radio" for="radio">
+        <input type="radio" value="true" id="radio" name="radio"> I love and want to save it, but it's not urgent</label>
+      <label>Where are you?</label>
+      <input type="text" class="input-medium" placeholder="postcode">
+
+          </form>
+        </div>
+      </div>
+
+      <div class="row">
+
+      <hr>
+
+      <h3>Sign up to submit your repair request <img src="img/sign-in-with-twitter.png"></h3>
+
+    </div>
+
+    </div>
+  </body>
+
 </html>
